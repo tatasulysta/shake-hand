@@ -59,6 +59,9 @@ importers:
       react-dom:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
+      react-hook-form:
+        specifier: ^7.62.0
+        version: 7.62.0(react@19.1.0)
       react-i18next:
         specifier: ^15.6.1
         version: 15.6.1(i18next@25.3.6(typescript@5.9.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.9.2)

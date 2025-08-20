@@ -41,3 +41,8 @@ a {
     color-scheme: dark;
   }
 }
+
+.mantine-InputWrapper-label {
+  font-family: var(--font-primary);
+
+}
