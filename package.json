@@ -1,0 +1,43 @@
+{
+  "name": "shakehand-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "@mantine/core": "^8.2.5",
+    "@mantine/dates": "^8.2.5",
+    "@mantine/hooks": "^8.2.5",
+    "@mantine/modals": "^8.2.5",
+    "@mantine/notifications": "^8.2.5",
+    "@mantine/vanilla-extract": "^8.2.5",
+    "@phosphor-icons/react": "^2.1.10",
+    "@vanilla-extract/css": "^1.17.4",
+    "@vanilla-extract/recipes": "^0.5.7",
+    "@vanilla-extract/sprinkles": "^1.6.5",
+    "classnames": "^2.5.1",
+    "i18next": "^25.3.6",
+    "lodash": "^4.17.21",
+    "next": "15.4.7",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-i18next": "^15.6.1",
+    "yup": "^1.7.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/lodash": "^4.17.20",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vanilla-extract/next-plugin": "^2.4.14",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.7",
+    "typescript": "^5"
+  }
+}
