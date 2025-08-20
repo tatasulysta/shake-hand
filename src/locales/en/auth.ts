@@ -2,7 +2,8 @@ export default {
   setup_account: 'Set up your account',
   setup_account_desc: 'Please complete all information to create your account',
 
-  agree_terms: 'By creating this account you agree to our <0/> and <0/>',
+  agree_terms:
+    'By creating this account you agree to our <0>Terms of Use</0> and <0>Privacy Policy</0>',
   terms_of_use: 'Terms of Use',
   privacy_policy: 'Privacy Policy',
   create_an_account: 'Create An Account',

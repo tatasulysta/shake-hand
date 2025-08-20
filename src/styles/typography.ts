@@ -60,24 +60,25 @@ export const typography = {
     fontWeight: 400,
     fontFamily: 'Poppins, sans-serif',
   },
-  buttonDefault: {
-    fontSize: 14,
-    fontWeight: 600,
-    fontFamily: 'Poppins, sans-serif',
-  },
-  buttonSmall: {
+
+  body4Semibold: {
     fontSize: 12,
     fontWeight: 600,
     fontFamily: 'Poppins, sans-serif',
   },
-  linkDefault: {
-    fontSize: 14,
-    fontWeight: 600,
+  body4Medium: {
+    fontSize: 12,
+    fontWeight: 500,
     fontFamily: 'Poppins, sans-serif',
   },
-  linkSmall: {
+  body4Regular: {
     fontSize: 12,
-    fontWeight: 600,
+    fontWeight: 400,
+    fontFamily: 'Poppins, sans-serif',
+  },
+  body4Thin: {
+    fontSize: 12,
+    fontWeight: 300,
     fontFamily: 'Poppins, sans-serif',
   },
 };

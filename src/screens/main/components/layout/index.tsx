@@ -1,6 +1,6 @@
 import React from 'react';
 import { styles } from './styles.css';
-import MainLayout from 'components/layout';
+import MainLayout from 'components/layout/main';
 import Text from 'components/elements/text';
 import { Reddit_Sans } from 'next/font/google';
 

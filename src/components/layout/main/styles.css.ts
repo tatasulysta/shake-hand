@@ -13,11 +13,14 @@ export const layoutStyles = {
   innerContainer: recipe({
     base: {
       maxWidth: breakpoints.sm,
+      paddingBottom: 32,
       borderLeftWidth: 1,
       borderRightWidth: 1,
       borderStyle: 'solid',
       borderColor: colors.borderGray,
       flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
     },
     variants: {
       padding: {

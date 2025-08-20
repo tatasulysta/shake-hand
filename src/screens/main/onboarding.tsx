@@ -8,9 +8,11 @@ import Text from 'components/elements/text';
 import Button from 'components/elements/button';
 import { Flex } from '@mantine/core';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-export default function SignUp() {
+export default function Onboarding() {
   const { t } = useTranslation();
+  const { push } = useRouter();
   return (
     <AuthLayout>
       <div className={styles.illustration}>
@@ -25,13 +27,13 @@ export default function SignUp() {
         </Text>
       </Flex>
       <Flex direction="column" align="center" gap={20} mt={30}>
-        <Button>
+        <Button onClick={() => push(`/sign-up/?type=buyer`)}>
           {t('common.register_as_extra', { extra: t('common.buyer') })}
         </Button>
         <Text color="textDarker" variant="body3Medium">
           {t('common.or')}
         </Text>
-        <Button>
+        <Button onClick={() => push(`/sign-up/?type=seller`)}>
           {t('common.register_as_extra', { extra: t('common.seller') })}
         </Button>
       </Flex>

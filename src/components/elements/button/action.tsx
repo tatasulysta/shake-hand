@@ -2,9 +2,8 @@ import {
   ActionIcon as RawActionIcon,
   ActionIconProps as RawActionIconProps,
 } from '@mantine/core';
-import classNames from 'classnames';
+
 import React, { ButtonHTMLAttributes, forwardRef } from 'react';
-import { buttonStyles } from './styles.css';
 
 export interface ActionIconProps
   extends Omit<RawActionIconProps, 'children'>,
@@ -13,7 +12,6 @@ export interface ActionIconProps
       'children' | 'color' | 'style'
     > {
   children: (size: number) => React.ReactNode;
-  variant?: 'primary' | 'secondary';
 }
 
 const ActionIcon = forwardRef<HTMLButtonElement, ActionIconProps>(
@@ -49,7 +47,6 @@ const ActionIcon = forwardRef<HTMLButtonElement, ActionIconProps>(
         variant={variant}
         size={size}
         radius={radius}
-        className={classNames(className, buttonStyles({ variant }))}
         loaderProps={{
           size,
         }}

@@ -20,10 +20,11 @@ interface FormProps {
   children: React.ReactNode;
   method?: RequestMethod;
   onSubmit: SubmitHandler<any>;
+  style?: React.CSSProperties;
 }
 
 export default function Form(props: FormProps) {
-  const { methods, children, method = 'POST', onSubmit } = props;
+  const { methods, children, method = 'POST', onSubmit, style } = props;
 
   return (
     <FormProvider {...methods}>
@@ -33,6 +34,7 @@ export default function Form(props: FormProps) {
           flex: 1,
           flexDirection: 'column',
           width: '100%',
+          ...style,
         }}
         method={method}
         /** Disable native form validation since it interferes with number input validation ("Please enter a valid value"). We already have Yup so native validation is not really required unless you need accessibility. But this is a user-facing app so... */

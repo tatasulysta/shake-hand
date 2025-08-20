@@ -1,5 +1,2 @@
-import SignUp from 'screens/main/sign-up';
-
-export default function Home() {
-  return <SignUp />;
-}
+import Onboarding from 'screens/main/onboarding';
+export default Onboarding;

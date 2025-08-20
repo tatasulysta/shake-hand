@@ -13,6 +13,7 @@ import { useForm } from 'react-hook-form';
 import useYupValidationResolver from 'hooks/use-yup-validation-resolver';
 import Form from 'components/elements/form';
 import { Input } from 'components/elements/fields';
+import Header from 'components/layout/header';
 
 type FormType = {
   email: string;
@@ -47,8 +48,7 @@ export default function SignIn() {
           {t('common.welcome_back')}
         </Text>
       </Flex>
-
-      <Form methods={methods} onSubmit={onSubmit}>
+      <Form methods={methods} onSubmit={onSubmit} style={{ flex: 0 }}>
         <Flex
           direction="column"
           align="center"
@@ -79,7 +79,7 @@ export default function SignIn() {
         </Text>
         <Link aria-disabled="true" href="/">
           <Text variant="body3Medium" color="info">
-            {t('common.sign_in')}
+            {t('common.sign_up')}
           </Text>
         </Link>
       </Flex>
